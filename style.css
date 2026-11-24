@@ -1,0 +1,32 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* Sắp xếp các thẻ theo hàng ngang */
+    justify-content: space-between; /* Phân bố khoảng cách giữa các thẻ */
+    align-items: center; /* Căn giữa các thẻ theo trục phụ */
+    flex-wrap: wrap; /* Cho phép các thẻ tự động xuống dòng khi không đủ chỗ */
+    gap: 20px; /* Tạo khoảng cách giữa các thẻ */
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    flex-grow: 1; /* Cho phép thẻ giãn ra để lấp đầy không gian còn trống */
+    flex-shrink: 0; /* Không cho thẻ bị thu nhỏ */
+    background-color: #2563eb;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
